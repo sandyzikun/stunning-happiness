@@ -1,3 +1,3 @@
-# stunning-happiness
+# Stunning Happiness
 
 ## Sharing the World!!!
