@@ -1,0 +1,417 @@
+数据基本分布状况信息:
+       top-left-square top-middle-square top-right-square    ...    bottom-middle-square bottom-right-square     class
+count              958               958              958    ...                     958                 958       958
+unique               3                 3                3    ...                       3                   3         2
+top                  x                 x                x    ...                       x                   x  positive
+freq               418               378              418    ...                     378                 418       626
+
+[4 rows x 10 columns]
+
+
+数据基本分布状况信息:
+       top-left-square  top-middle-square         ...           bottom-middle-square  bottom-right-square
+count       958.000000         958.000000         ...                     958.000000           958.000000
+mean          0.086639           0.050104         ...                       0.050104             0.086639
+std           0.882791           0.858661         ...                       0.858661             0.882791
+min          -1.000000          -1.000000         ...                      -1.000000            -1.000000
+25%          -1.000000          -1.000000         ...                      -1.000000            -1.000000
+50%           0.000000           0.000000         ...                       0.000000             0.000000
+75%           1.000000           1.000000         ...                       1.000000             1.000000
+max           1.000000           1.000000         ...                       1.000000             1.000000
+
+[8 rows x 9 columns]
+
+
+LR
+    MEAN:   0.9843301435406697
+    STD:    0.012812496636592164
+
+LDA
+    MEAN:   0.9843301435406697
+    STD:    0.012812496636592164
+
+KNC
+    MEAN:   0.9948051948051948
+    STD:    0.006362311020216049
+
+GNB
+    MEAN:   0.711637047163363
+    STD:    0.05227134187764554
+
+DTC
+    MEAN:   0.955604921394395
+    STD:    0.019581259110967482
+
+SVC
+    MEAN:   0.9856288448393711
+    STD:    0.013649473258530628
+
+
+KNC-K近邻算法预测结果:
+    ACCURACY_SCORE:
+        1.0
+    CONFUSION_MATRIX:
+[[ 73   0]
+ [  0 119]]
+    CLASSIFICATION_REPORT:
+             precision    recall  f1-score   support
+
+   negative       1.00      1.00      1.00        73
+   positive       1.00      1.00      1.00       119
+
+avg / total       1.00      1.00      1.00       192
+
+
+
+SVC-资瓷矢量机预测结果:
+    ACCURACY_SCORE:
+        0.9791666666666666
+    CONFUSION_MATRIX:
+[[ 69   4]
+ [  0 119]]
+    CLASSIFICATION_REPORT:
+             precision    recall  f1-score   support
+
+   negative       1.00      0.95      0.97        73
+   positive       0.97      1.00      0.98       119
+
+avg / total       0.98      0.98      0.98       192
+
+
+
+C:\Users\Administrator\Anaconda3\lib\site-packages\sklearn\utils\validation.py:475: DataConversionWarning: Data with input dtype object was converted to float64 by StandardScaler.
+  warnings.warn(msg, DataConversionWarning)
+LR
+    MEAN:   0.9843301435406697
+    STD:    0.012812496636592164
+
+C:\Users\Administrator\Anaconda3\lib\site-packages\sklearn\utils\validation.py:475: DataConversionWarning: Data with input dtype object was converted to float64 by StandardScaler.
+  warnings.warn(msg, DataConversionWarning)
+LDA
+    MEAN:   0.9843301435406697
+    STD:    0.012812496636592164
+
+C:\Users\Administrator\Anaconda3\lib\site-packages\sklearn\utils\validation.py:475: DataConversionWarning: Data with input dtype object was converted to float64 by StandardScaler.
+  warnings.warn(msg, DataConversionWarning)
+KNC
+    MEAN:   0.9948051948051948
+    STD:    0.006362311020216049
+
+C:\Users\Administrator\Anaconda3\lib\site-packages\sklearn\utils\validation.py:475: DataConversionWarning: Data with input dtype object was converted to float64 by StandardScaler.
+  warnings.warn(msg, DataConversionWarning)
+GNB
+    MEAN:   0.711637047163363
+    STD:    0.05227134187764554
+
+C:\Users\Administrator\Anaconda3\lib\site-packages\sklearn\utils\validation.py:475: DataConversionWarning: Data with input dtype object was converted to float64 by StandardScaler.
+  warnings.warn(msg, DataConversionWarning)
+DTC
+    MEAN:   0.9543403964456596
+    STD:    0.02206860890992136
+
+C:\Users\Administrator\Anaconda3\lib\site-packages\sklearn\utils\validation.py:475: DataConversionWarning: Data with input dtype object was converted to float64 by StandardScaler.
+  warnings.warn(msg, DataConversionWarning)
+SVC
+    MEAN:   0.9856288448393711
+    STD:    0.013649473258530628
+
+
+C:\Users\Administrator\Anaconda3\lib\site-packages\sklearn\utils\validation.py:475: DataConversionWarning: Data with input dtype object was converted to float64 by StandardScaler.
+  warnings.warn(msg, DataConversionWarning)
+KNC-K近邻算法数据正态化后预测结果:
+    ACCURACY_SCORE:
+        1.0
+    CONFUSION_MATRIX:
+[[ 73   0]
+ [  0 119]]
+    CLASSIFICATION_REPORT:
+             precision    recall  f1-score   support
+
+   negative       1.00      1.00      1.00        73
+   positive       1.00      1.00      1.00       119
+
+avg / total       1.00      1.00      1.00       192
+
+
+
+SVC-资瓷矢量机数据正态化后预测结果:
+    ACCURACY_SCORE:
+        0.9635416666666666
+    CONFUSION_MATRIX:
+[[ 66   7]
+ [  0 119]]
+    CLASSIFICATION_REPORT:
+             precision    recall  f1-score   support
+
+   negative       1.00      0.90      0.95        73
+   positive       0.94      1.00      0.97       119
+
+avg / total       0.97      0.96      0.96       192
+
+
+
+MEAN:
+    1.0
+STD:
+    0.0
+PARAM:
+    {'n_neighbors': 1}
+
+MEAN:
+    1.0
+STD:
+    0.0
+PARAM:
+    {'n_neighbors': 3}
+
+MEAN:
+    0.9947780678851175
+STD:
+    0.006367788091703276
+PARAM:
+    {'n_neighbors': 5}
+
+MEAN:
+    0.9856396866840731
+STD:
+    0.012267496776281996
+PARAM:
+    {'n_neighbors': 7}
+
+MEAN:
+    0.9804177545691906
+STD:
+    0.012088640884037334
+PARAM:
+    {'n_neighbors': 9}
+
+MEAN:
+    0.9778067885117493
+STD:
+    0.013158332159078991
+PARAM:
+    {'n_neighbors': 11}
+
+MEAN:
+    0.9725848563968669
+STD:
+    0.012351769484107853
+PARAM:
+    {'n_neighbors': 13}
+
+MEAN:
+    0.9699738903394256
+STD:
+    0.02193405030965567
+PARAM:
+    {'n_neighbors': 15}
+
+MEAN:
+    0.9634464751958225
+STD:
+    0.020934273109703114
+PARAM:
+    {'n_neighbors': 17}
+
+MEAN:
+    0.9464751958224543
+STD:
+    0.025049215845709644
+PARAM:
+    {'n_neighbors': 19}
+
+MEAN:
+    0.943864229765013
+STD:
+    0.02912406815219456
+PARAM:
+    {'n_neighbors': 21}
+
+最优:
+    1.0
+使用:
+    {'n_neighbors': 1}
+
+
+C:\Users\Administrator\Anaconda3\lib\site-packages\sklearn\utils\validation.py:475: DataConversionWarning: Data with input dtype object was converted to float64 by StandardScaler.
+  warnings.warn(msg, DataConversionWarning)
+KNC-K近邻算法数据正态化后最优参数调整预测结果:
+    ACCURACY_SCORE:
+        1.0
+    CONFUSION_MATRIX:
+[[ 73   0]
+ [  0 119]]
+    CLASSIFICATION_REPORT:
+             precision    recall  f1-score   support
+
+   negative       1.00      1.00      1.00        73
+   positive       1.00      1.00      1.00       119
+
+avg / total       1.00      1.00      1.00       192
+
+
+
+C:\Users\Administrator\Anaconda3\lib\site-packages\sklearn\utils\validation.py:475: DataConversionWarning: Data with input dtype object was converted to float64 by StandardScaler.
+  warnings.warn(msg, DataConversionWarning)
+ABC
+    MEAN:   0.8460868079289131
+    STD:    0.05654477101845521
+
+C:\Users\Administrator\Anaconda3\lib\site-packages\sklearn\utils\validation.py:475: DataConversionWarning: Data with input dtype object was converted to float64 by StandardScaler.
+  warnings.warn(msg, DataConversionWarning)
+GBC
+    MEAN:   0.9830143540669856
+    STD:    0.015568668520173502
+
+C:\Users\Administrator\Anaconda3\lib\site-packages\sklearn\utils\validation.py:475: DataConversionWarning: Data with input dtype object was converted to float64 by StandardScaler.
+  warnings.warn(msg, DataConversionWarning)
+RFC
+    MEAN:   0.9686431989063568
+    STD:    0.01872527953301286
+
+C:\Users\Administrator\Anaconda3\lib\site-packages\sklearn\utils\validation.py:475: DataConversionWarning: Data with input dtype object was converted to float64 by StandardScaler.
+  warnings.warn(msg, DataConversionWarning)
+ETC
+    MEAN:   0.9752221462747779
+    STD:    0.01975100319604099
+
+
+C:\Users\Administrator\Anaconda3\lib\site-packages\sklearn\utils\validation.py:475: DataConversionWarning: Data with input dtype object was converted to float64 by StandardScaler.
+  warnings.warn(msg, DataConversionWarning)
+GBC-随机梯度上升数据正态化后预测结果:
+    ACCURACY_SCORE:
+        0.9739583333333334
+    CONFUSION_MATRIX:
+[[ 68   5]
+ [  0 119]]
+    CLASSIFICATION_REPORT:
+             precision    recall  f1-score   support
+
+   negative       1.00      0.93      0.96        73
+   positive       0.96      1.00      0.98       119
+
+avg / total       0.98      0.97      0.97       192
+
+
+
+MEAN:
+    0.7976501305483029
+STD:
+    0.047787001806038086
+PARAM:
+    {'n_estimators': 10}
+
+MEAN:
+    0.9673629242819843
+STD:
+    0.022965461610796673
+PARAM:
+    {'n_estimators': 50}
+
+MEAN:
+    0.9830287206266318
+STD:
+    0.015542691239510737
+PARAM:
+    {'n_estimators': 100}
+
+MEAN:
+    0.9882506527415144
+STD:
+    0.014847477243011773
+PARAM:
+    {'n_estimators': 200}
+
+MEAN:
+    0.9908616187989556
+STD:
+    0.011804665608143096
+PARAM:
+    {'n_estimators': 300}
+
+MEAN:
+    0.9908616187989556
+STD:
+    0.011804665608143096
+PARAM:
+    {'n_estimators': 400}
+
+MEAN:
+    0.9934725848563969
+STD:
+    0.00878570105358128
+PARAM:
+    {'n_estimators': 500}
+
+MEAN:
+    0.9947780678851175
+STD:
+    0.008680420967600452
+PARAM:
+    {'n_estimators': 600}
+
+MEAN:
+    0.9960835509138382
+STD:
+    0.008386023175163586
+PARAM:
+    {'n_estimators': 700}
+
+MEAN:
+    0.9973890339425587
+STD:
+    0.007867177977994957
+PARAM:
+    {'n_estimators': 800}
+
+MEAN:
+    0.9973890339425587
+STD:
+    0.007867177977994957
+PARAM:
+    {'n_estimators': 900}
+
+最优:
+    0.9973890339425587
+使用:
+    {'n_estimators': 800}
+
+
+C:\Users\Administrator\Anaconda3\lib\site-packages\sklearn\utils\validation.py:475: DataConversionWarning: Data with input dtype object was converted to float64 by StandardScaler.
+  warnings.warn(msg, DataConversionWarning)
+GBC-随机梯度上升数据正态化后最优参数调整预测结果:
+    ACCURACY_SCORE:
+        1.0
+    CONFUSION_MATRIX:
+[[ 73   0]
+ [  0 119]]
+    CLASSIFICATION_REPORT:
+             precision    recall  f1-score   support
+
+   negative       1.00      1.00      1.00        73
+   positive       1.00      1.00      1.00       119
+
+avg / total       1.00      1.00      1.00       192
+
+
+
+最终预测结果:
+使用算法: K最近邻(K Nearest Neighbors)
+ 使用算法: K最近邻(K Nearest Neighbors)
+ 使用算法: K最近邻(K Nearest Neighbors)
+ 使用算法: K最近邻(K Nearest Neighbors)
+ ACCURACY_SCORE:
+        1.0
+    CONFUSION_MATRIX:
+[[ 73   0]
+ [  0 119]]
+    CLASSIFICATION_REPORT:
+             precision    recall  f1-score   support
+
+   negative       1.00      1.00      1.00        73
+   positive       1.00      1.00      1.00       119
+
+avg / total       1.00      1.00      1.00       192
+
+
+-*- END -*-
